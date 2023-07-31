@@ -1,9 +1,11 @@
+﻿using DataObjects;
 using System;
 using UnityEngine;
 
 namespace Items
 {
-    public abstract class ItemDefinition : ScriptableObject
+    [Serializable]
+    public class UiItem : DataComponent
     {
         public Texture2D Icon;
         public string Name;
@@ -11,4 +13,3 @@ namespace Items
         public Guid Id = Guid.NewGuid();
     }
 }
-

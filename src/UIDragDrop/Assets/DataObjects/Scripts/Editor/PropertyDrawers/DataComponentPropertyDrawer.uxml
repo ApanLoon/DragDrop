@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="title" class="unity-foldout unity-foldout--depth-0" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Toggle focusable="false" value="false" class="unity-foldout__toggle" >
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="TypeName" />
+        </ui:Toggle>
+    </ui:VisualElement>
+    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+    <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="TypeName" />
+    <ui:VisualElement name="content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+    <ui:Foldout text="Foldout" >
+        <ui:Label tabindex="-1" display-tooltip-when-elided="true" binding-path="TypeName" />
+    </ui:Foldout>
+</ui:UXML>

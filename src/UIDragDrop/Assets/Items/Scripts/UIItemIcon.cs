@@ -1,3 +1,4 @@
+using DataObjects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ namespace Items
     [RequireComponent(typeof(RawImage))]
     public class UIItemIcon : MonoBehaviour
     {
-        public ItemDefinition Definition;
+        public DataObject Definition;
         public int StackSize 
         {
             get => _stackSize;
@@ -32,8 +33,15 @@ namespace Items
                 return;
             }
 
+            var UiItem = Definition.GetComponent<UiItem>();
+            if (UiItem == null)
+            {
+                Debug.LogError($"Definition of item {gameObject.name} has no UiItem component!");
+                return;
+            }
+
             _icon = GetComponent<RawImage>();
-            _icon.texture = Definition.Icon;
+            _icon.texture = UiItem.Icon;
 
             _stackCountPanel = transform.Find("StackPanel");
             if (_stackCountPanel == null)

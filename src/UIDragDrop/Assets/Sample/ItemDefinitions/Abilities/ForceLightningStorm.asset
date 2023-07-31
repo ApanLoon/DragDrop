@@ -10,28 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e453c63901fb9e449fd2ae002ef6451, type: 3}
-  m_Name: Chest000
+  m_Name: ForceLightningStorm
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 8837394696952086529
-  - rid: 8837394695382368276
-  - rid: 8837394696952086528
+  - rid: 8837394696952086530
+  - rid: 8837394696952086531
   references:
     version: 2
     RefIds:
-    - rid: 8837394695382368276
-      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
-      data:
-        MaxStackSize: 2
-        BasePrice: 1
-    - rid: 8837394696952086528
-      type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
-      data:
-        Slot: Chest
-    - rid: 8837394696952086529
+    - rid: 8837394696952086530
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
-        Icon: {fileID: 2800000, guid: 606b88e16a3f81a47a7303057c6e953d, type: 3}
-        Name: Chest000
+        Icon: {fileID: 2800000, guid: d348b7f5430595e469bd62d984382788, type: 3}
+        Name: Force Lightning Storm
         Description: 
+    - rid: 8837394696952086531
+      type: {class: Ability, ns: Items, asm: Assembly-CSharp}
+      data:
+        CoolDown: 1
