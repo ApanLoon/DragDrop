@@ -67,8 +67,10 @@ namespace DataObjects
 
         public override void OnInspectorGUI()
         {
-            GameObject o;
             serializedObject.Update();
+
+            base.OnInspectorGUI();
+
             var dataObject = (DataObject)target;
             foreach (var component in dataObject.Components)
             {

@@ -11,7 +11,8 @@ namespace DataObjects
     public class DataObject : ScriptableObject
     {
         public string Name;
-        public List<DataComponent> Components = new List<DataComponent>();
+
+        [SerializeReference] public List<DataComponent> Components = new List<DataComponent>();
 
         public T GetComponent<T>() where T: DataComponent
         {

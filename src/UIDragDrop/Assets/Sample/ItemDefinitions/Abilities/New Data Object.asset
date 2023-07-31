@@ -13,3 +13,26 @@ MonoBehaviour:
   m_Name: New Data Object
   m_EditorClassIdentifier: 
   Name: 
+  Components:
+  - rid: 8837394691370516483
+  - rid: 8837394691370516484
+  - rid: 8837394691370516485
+  references:
+    version: 2
+    RefIds:
+    - rid: 8837394691370516483
+      type: {class: Ability, ns: Items, asm: Assembly-CSharp}
+      data:
+        IsEnabled: 1
+        CoolDown: 0
+    - rid: 8837394691370516484
+      type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
+      data:
+        IsEnabled: 1
+        Slot: 
+    - rid: 8837394691370516485
+      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
+      data:
+        IsEnabled: 1
+        MaxStackSize: 1
+        BasePrice: 1

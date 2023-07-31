@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 
-public class DataComponent // : Object
+namespace DataObjects
 {
-    public DataComponent()
+    [Serializable]
+    public class DataComponent
     {
+        public bool IsEnabled = true;
     }
 }
