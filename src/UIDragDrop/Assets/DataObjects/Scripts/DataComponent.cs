@@ -1,11 +1,10 @@
 using System;
-using UnityEngine;
 
 namespace DataObjects
 {
     [Serializable]
     public class DataComponent
     {
-        public bool IsEnabled = true;
+        // NOTE: If a DataComponent subclass has no serializable fields, the component will not be saved.
     }
 }

@@ -1,3 +1,4 @@
+using DataObjects;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -49,9 +50,10 @@ namespace Items
                     return;
                 }
 
-                if (oldItem.Definition is InventoryItemDefinition definition)
+                if (oldItem.Definition is DataObject definition)
                 {
-                    if (oldItem.StackSize >= definition.stackMax)
+                    var inventoryItem = oldItem.Definition.GetComponent<InventoryItem>();
+                    if (inventoryItem == null || oldItem.StackSize >= inventoryItem.MaxStackSize)
                     {
                         return;
                     }
