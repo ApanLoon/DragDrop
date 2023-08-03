@@ -1,24 +1,29 @@
+using Items;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UIDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public Transform StartParent { get; private set; }
-    private Transform _dropTarget;
+    public UIDropTarget StartDropTarget { get; private set; }
+    private UIDropTarget _endDropTarget;
+    
     private RawImage  _image;
 
-    public void SetDropTarget (Transform target)
+    public void SetEndDropTarget (UIDropTarget target)
     {
-        _dropTarget = target;
+        _endDropTarget = target;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        StartParent = transform.parent;
-        
+        StartDropTarget = transform.parent.GetComponent<UIDropTarget>();
+
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
+
+        var startdropTarget = StartDropTarget.GetComponent<UIDropTarget>();
+        startdropTarget.RaiseOnRemoved(this);
 
         _image = GetComponent<RawImage>();
         _image.raycastTarget = false;
@@ -31,7 +36,13 @@ public class UIDraggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.SetParent(_dropTarget != null ? _dropTarget : StartParent);
+        if (_endDropTarget == null)
+        {
+            _endDropTarget = StartDropTarget;
+        }
+
+        transform.SetParent(_endDropTarget.transform);
+        _endDropTarget.RaiseOnDropped(this);
         _image.raycastTarget = true;
         _image = null;
     }
