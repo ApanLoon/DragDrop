@@ -23,7 +23,7 @@ MonoBehaviour:
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: d348b7f5430595e469bd62d984382788, type: 3}
-        Name: Force Lightning Storm
+        Name: Legacy Lightning Storm
         Description: 
     - rid: 8837394696952086531
       type: {class: Ability, ns: Items, asm: Assembly-CSharp}

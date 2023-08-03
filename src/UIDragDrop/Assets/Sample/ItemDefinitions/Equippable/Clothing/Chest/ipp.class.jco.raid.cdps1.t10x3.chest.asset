@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e453c63901fb9e449fd2ae002ef6451, type: 3}
-  m_Name: Chest000
+  m_Name: ipp.class.jco.raid.cdps1.t10x3.chest
   m_EditorClassIdentifier: 
   Name: 
   Components:
@@ -24,7 +24,7 @@ MonoBehaviour:
       type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
       data:
         MaxStackSize: 2
-        BasePrice: 1
+        BasePrice: 300
     - rid: 8837394696952086528
       type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
       data:

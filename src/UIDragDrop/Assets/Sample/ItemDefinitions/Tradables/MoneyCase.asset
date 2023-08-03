@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e453c63901fb9e449fd2ae002ef6451, type: 3}
-  m_Name: ForceShield
+  m_Name: MoneyCase
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 8837394696952086530
-  - rid: 8837394696952086531
+  - rid: 6675867452673359872
+  - rid: 6675867452673359873
   references:
     version: 2
     RefIds:
-    - rid: 8837394696952086530
+    - rid: 6675867452673359872
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
-        Icon: {fileID: 2800000, guid: 01797dbf57c635f41ae493d271ab1a39, type: 3}
-        Name: Shield Enhancers
+        Icon: {fileID: 2800000, guid: b98ed269b4eccfe4597d59c814050739, type: 3}
+        Name: Money Case
         Description: 
-    - rid: 8837394696952086531
-      type: {class: Ability, ns: Items, asm: Assembly-CSharp}
+    - rid: 6675867452673359873
+      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
       data:
-        CoolDown: 5
+        MaxStackSize: 1
+        BasePrice: 10000

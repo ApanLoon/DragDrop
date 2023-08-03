@@ -23,7 +23,7 @@ MonoBehaviour:
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: 2a756d97671ca5e46b3afa1f1d916660, type: 3}
-        Name: Cripple
+        Name: Crippling Slice
         Description: 
     - rid: 8837394696952086531
       type: {class: Ability, ns: Items, asm: Assembly-CSharp}
