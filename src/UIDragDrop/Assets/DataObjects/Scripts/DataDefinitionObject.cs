@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -23,10 +22,12 @@ namespace DataObjects
         public void AddComponent (DataDefinitionComponent component)
         {
             Components.Add(component);
+            component.SetDataDefinitionObject(this);
         }
         public void RemoveComponent(DataDefinitionComponent component)
         {
             Components.Remove(component);
+            component.SetDataDefinitionObject(null);
         }
     }
 }

@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 6675867450472923138
-  - rid: 6675867450472923136
-  - rid: 6675867450472923137
+  - rid: 6675867498367156230
+  - rid: 6675867498367156231
+  - rid: 6675867498367156232
   references:
     version: 2
     RefIds:
-    - rid: 6675867450472923136
-      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
-      data:
-        MaxStackSize: 99
-        BasePrice: 10
-    - rid: 6675867450472923137
-      type: {class: Ability, ns: Items, asm: Assembly-CSharp}
-      data:
-        CoolDown: 120
-    - rid: 6675867450472923138
+    - rid: 6675867498367156230
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: bbcd254b247ff6042b502c41a4a9eddf, type: 3}
         Name: Med pack
         Description: 
+    - rid: 6675867498367156231
+      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
+      data:
+        MaxStackSize: 99
+        BasePrice: 10
+    - rid: 6675867498367156232
+      type: {class: Ability, ns: Items, asm: Assembly-CSharp}
+      data:
+        CoolDown: 120

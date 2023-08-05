@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 6675867452673359872
-  - rid: 6675867452673359873
+  - rid: 6675867498367156245
+  - rid: 6675867498367156246
   references:
     version: 2
     RefIds:
-    - rid: 6675867452673359872
+    - rid: 6675867498367156245
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: f12f9a6e7c382a543b750da1b41c9d59, type: 3}
         Name: Blaster Magazine
         Description: 
-    - rid: 6675867452673359873
+    - rid: 6675867498367156246
       type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
       data:
         MaxStackSize: 25

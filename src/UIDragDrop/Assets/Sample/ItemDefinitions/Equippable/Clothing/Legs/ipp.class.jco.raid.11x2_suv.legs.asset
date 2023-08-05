@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 8837394696952086529
-  - rid: 8837394695382368276
-  - rid: 8837394696952086528
+  - rid: 6675867498367156242
+  - rid: 6675867498367156243
+  - rid: 6675867498367156244
   references:
     version: 2
     RefIds:
-    - rid: 8837394695382368276
-      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
-      data:
-        MaxStackSize: 1
-        BasePrice: 1
-    - rid: 8837394696952086528
-      type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
-      data:
-        Slot: Legs
-    - rid: 8837394696952086529
+    - rid: 6675867498367156242
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: 788e0d5c5a7967e4894f571f7ab339f3, type: 3}
         Name: Legs000
         Description: 
+    - rid: 6675867498367156243
+      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
+      data:
+        MaxStackSize: 1
+        BasePrice: 1
+    - rid: 6675867498367156244
+      type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
+      data:
+        Slot: Legs

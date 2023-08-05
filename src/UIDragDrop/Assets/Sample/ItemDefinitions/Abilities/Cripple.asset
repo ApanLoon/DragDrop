@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 8837394696952086530
-  - rid: 8837394696952086531
+  - rid: 6675867498367156224
+  - rid: 6675867498367156225
   references:
     version: 2
     RefIds:
-    - rid: 8837394696952086530
+    - rid: 6675867498367156224
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: 2a756d97671ca5e46b3afa1f1d916660, type: 3}
         Name: Crippling Slice
         Description: 
-    - rid: 8837394696952086531
+    - rid: 6675867498367156225
       type: {class: Ability, ns: Items, asm: Assembly-CSharp}
       data:
         CoolDown: 5

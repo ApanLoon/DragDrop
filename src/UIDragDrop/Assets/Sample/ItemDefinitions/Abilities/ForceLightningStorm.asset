@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Components:
-  - rid: 8837394696952086530
-  - rid: 8837394696952086531
+  - rid: 6675867498367156226
+  - rid: 6675867498367156227
   references:
     version: 2
     RefIds:
-    - rid: 8837394696952086530
+    - rid: 6675867498367156226
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 2800000, guid: d348b7f5430595e469bd62d984382788, type: 3}
         Name: Legacy Lightning Storm
         Description: 
-    - rid: 8837394696952086531
+    - rid: 6675867498367156227
       type: {class: Ability, ns: Items, asm: Assembly-CSharp}
       data:
         CoolDown: 1
