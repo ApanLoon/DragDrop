@@ -71,6 +71,17 @@ namespace Items
                 if (oldItem.Definition != dropItem.Definition)
                 {
                     // Swap items of different type:
+                    var oldDraggable = oldGo.GetComponent<UIDraggable>();
+
+                    // Check if the start slot accepts the type of item being swapped:
+                    foreach (var validator in draggable.StartDropTarget.GetComponents<UIDropValidator>())
+                    {
+                        if (validator.IsDropAllowed(oldDraggable, draggable.StartDropTarget) == false)
+                        {
+                            return null;
+                        }
+                    }
+
                     oldGo.transform.SetParent(draggable.StartDropTarget.transform);
                     return this;
                 }
