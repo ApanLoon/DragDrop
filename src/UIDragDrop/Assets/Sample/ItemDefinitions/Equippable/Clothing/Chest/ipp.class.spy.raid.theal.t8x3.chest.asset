@@ -23,15 +23,18 @@ MonoBehaviour:
     - rid: 6675867498367156236
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Icon: {fileID: 2800000, guid: 990cffdc97d56ba4fad0745772cff3df, type: 3}
         Name: Chest001
         Description: 
     - rid: 6675867498367156237
       type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         MaxStackSize: 2
         BasePrice: 500
     - rid: 6675867498367156238
       type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Slot: Chest

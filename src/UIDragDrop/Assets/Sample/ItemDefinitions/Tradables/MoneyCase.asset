@@ -22,11 +22,13 @@ MonoBehaviour:
     - rid: 6675867498367156247
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Icon: {fileID: 2800000, guid: b98ed269b4eccfe4597d59c814050739, type: 3}
         Name: Money Case
         Description: 
     - rid: 6675867498367156248
       type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         MaxStackSize: 1
         BasePrice: 10000

@@ -22,10 +22,12 @@ MonoBehaviour:
     - rid: 6675867498367156226
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Icon: {fileID: 2800000, guid: d348b7f5430595e469bd62d984382788, type: 3}
         Name: Legacy Lightning Storm
         Description: 
     - rid: 6675867498367156227
       type: {class: Ability, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         CoolDown: 1

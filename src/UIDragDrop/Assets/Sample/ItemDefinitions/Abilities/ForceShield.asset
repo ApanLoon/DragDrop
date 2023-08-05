@@ -22,10 +22,12 @@ MonoBehaviour:
     - rid: 6675867498367156228
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Icon: {fileID: 2800000, guid: 01797dbf57c635f41ae493d271ab1a39, type: 3}
         Name: Shield Enhancers
         Description: 
     - rid: 6675867498367156229
       type: {class: Ability, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         CoolDown: 5

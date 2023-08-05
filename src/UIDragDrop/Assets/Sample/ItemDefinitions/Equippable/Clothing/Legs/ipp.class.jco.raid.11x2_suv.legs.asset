@@ -23,15 +23,18 @@ MonoBehaviour:
     - rid: 6675867498367156242
       type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Icon: {fileID: 2800000, guid: 788e0d5c5a7967e4894f571f7ab339f3, type: 3}
         Name: Legs000
         Description: 
     - rid: 6675867498367156243
       type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         MaxStackSize: 1
         BasePrice: 1
     - rid: 6675867498367156244
       type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
       data:
+        _dataDefinitionObject: {fileID: 11400000}
         Slot: Legs
