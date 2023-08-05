@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e453c63901fb9e449fd2ae002ef6451, type: 3}
+  m_Name: ipp.class.jco.flashpoint.cdps1.t4x1.feet
+  m_EditorClassIdentifier: 
+  Name: 
+  Components:
+  - rid: 6675867498367156239
+  - rid: 6675867498367156240
+  - rid: 6675867498367156241
+  references:
+    version: 2
+    RefIds:
+    - rid: 6675867498367156239
+      type: {class: UiItem, ns: Items, asm: Assembly-CSharp}
+      data:
+        _dataDefinitionObject: {fileID: 11400000}
+        Icon: {fileID: 2800000, guid: 302c4b8e717f18e4ba76cb2a605999c1, type: 3}
+        Name: Feet001
+        Description: 
+    - rid: 6675867498367156240
+      type: {class: InventoryItem, ns: Items, asm: Assembly-CSharp}
+      data:
+        _dataDefinitionObject: {fileID: 11400000}
+        MaxStackSize: 1
+        BasePrice: 100
+    - rid: 6675867498367156241
+      type: {class: Equipable, ns: Items, asm: Assembly-CSharp}
+      data:
+        _dataDefinitionObject: {fileID: 11400000}
+        Slot: Feet
