@@ -9,22 +9,22 @@ namespace DataObjects
     /// A ScriptableObject that supports a component model where you can add DataComponents.
     /// </summary>
     [CreateAssetMenu()]
-    public class DataObject : ScriptableObject
+    public class DataDefinitionObject : ScriptableObject
     {
         public string Name;
 
-        [SerializeReference] public List<DataComponent> Components = new List<DataComponent>();
+        [SerializeReference] public List<DataDefinitionComponent> Components = new List<DataDefinitionComponent>();
 
-        public T GetComponent<T>() where T: DataComponent
+        public T GetComponent<T>() where T: DataDefinitionComponent
         {
             return (T)Components.FirstOrDefault(x => x is T);
         }
 
-        public void AddComponent (DataComponent component)
+        public void AddComponent (DataDefinitionComponent component)
         {
             Components.Add(component);
         }
-        public void RemoveComponent(DataComponent component)
+        public void RemoveComponent(DataDefinitionComponent component)
         {
             Components.Remove(component);
         }

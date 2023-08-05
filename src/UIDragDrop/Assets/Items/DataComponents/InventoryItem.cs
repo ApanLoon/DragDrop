@@ -4,7 +4,7 @@ using System;
 namespace Items
 {
     [Serializable]
-    public class InventoryItem : DataComponent
+    public class InventoryItem : DataDefinitionComponent
     {
         /// <summary>
         /// Defines how many can be stacked in an inventory slot.

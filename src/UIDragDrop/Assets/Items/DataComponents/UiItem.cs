@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Items
 {
     [Serializable]
-    public class UiItem : DataComponent
+    public class UiItem : DataDefinitionComponent
     {
         public Texture2D Icon;
         public string Name;

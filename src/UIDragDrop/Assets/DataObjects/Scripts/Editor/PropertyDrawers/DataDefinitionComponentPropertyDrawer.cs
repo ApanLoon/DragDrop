@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 namespace DataObjects
 {
-    [CustomPropertyDrawer(typeof(DataComponent))]
+    [CustomPropertyDrawer(typeof(DataDefinitionComponent))]
     public class DataComponentPropertyDrawer : PropertyDrawer
     {
         public override VisualElement CreatePropertyGUI(SerializedProperty property)

@@ -8,7 +8,7 @@ namespace Items
     [RequireComponent(typeof(RawImage))]
     public class UIItemIcon : MonoBehaviour
     {
-        public DataObject Definition;
+        public DataDefinitionObject Definition;
         public int StackSize 
         {
             get => _stackSize;

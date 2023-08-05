@@ -7,21 +7,21 @@ using UnityEditor.UIElements;
 
 namespace DataObjects
 {
-    [CustomEditor(typeof(DataObject))]
-    public class DataObjectEditor : Editor
+    [CustomEditor(typeof(DataDefinitionObject))]
+    public class DataDefinitionObjectEditor : Editor
     {
         private static Type[] AvailableComponentTypes;
 
         private PropertyField _componentsField;
         private Box _availableComponentsBox;
 
-        public DataObjectEditor()
+        public DataDefinitionObjectEditor()
         {
             if (AvailableComponentTypes == null)
             {
                 AvailableComponentTypes = AppDomain.CurrentDomain.GetAssemblies()
                     .SelectMany(assembly => assembly.GetTypes())
-                    .Where(type => type.IsSubclassOf(typeof(DataComponent)))
+                    .Where(type => type.IsSubclassOf(typeof(DataDefinitionComponent)))
                     .ToArray();
             }
         }
@@ -29,7 +29,7 @@ namespace DataObjects
 
         public override VisualElement CreateInspectorGUI()
         {
-            DataObject dataObject = (DataObject)target;
+            DataDefinitionObject dataObject = (DataDefinitionObject)target;
             var componentsProperty = serializedObject.FindProperty("Components");
 
             VisualElement root = new VisualElement();
@@ -45,7 +45,7 @@ namespace DataObjects
             {
                 var button = new Button(() =>
                 {
-                    var component = (DataComponent)Activator.CreateInstance(componentType);
+                    var component = (DataDefinitionComponent)Activator.CreateInstance(componentType);
                     if (component != null)
                     {
                         dataObject.AddComponent(component);

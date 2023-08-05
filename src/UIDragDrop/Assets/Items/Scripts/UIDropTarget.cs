@@ -75,7 +75,7 @@ namespace Items
                     return this;
                 }
 
-                if (oldItem.Definition is DataObject definition)
+                if (oldItem.Definition is DataDefinitionObject definition)
                 {
                     var inventoryItem = oldItem.Definition.GetComponent<InventoryItem>();
                     if (inventoryItem == null || oldItem.StackSize >= inventoryItem.MaxStackSize)
